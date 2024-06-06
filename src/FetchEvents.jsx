@@ -24,7 +24,8 @@ const FetchEvents = () => {
         if (done) break;
         const chunk = decoder.decode(value, { stream: true });
         console.log(chunk)
-        setEvents(JSON.parse(chunk));
+        const r = chunk.split("}")
+        setEvents(JSON.parse(r[r.length - 2] + "}"));
         console.log("parse")
        
       }
