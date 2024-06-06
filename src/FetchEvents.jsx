@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import axios from "axios";
 
 const FetchEvents = () => {
   const [events, setEvents] = useState({"response":"", "done":""});
