@@ -10,7 +10,7 @@ const FetchEvents = () => {
  
   const fetchEvents = async () => {
     setLoading(true);
-    const url = 'https://13f5-154-251-18-57.ngrok-free.app/test2';  
+    const url = 'https://6bb3-105-110-89-235.ngrok-free.app/test2';  
     try {
       const data = {"input":dataInput, "hist":dataHist}
       const response = await fetch(url, { method: 'POST'  ,  headers: {'Content-Type':'application/json'},body: JSON.stringify(data)});
